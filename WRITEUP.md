@@ -23,14 +23,39 @@ The inference time of the model pre- and post-conversion was...
 
 ## Assess Model Use Cases
 
-Some of the potential use cases of the people counter app are...
+Some of the potential use cases of the people counter app are listed in:
 
-Each of these use cases would be useful because...
+[4 Business Models for a People Counter App at the Edge.](https://medium.com/@santiagomartnez_69416/4-business-models-for-a-people-counter-app-at-the-edge-4c48b9f8e0c0)
+
+
 
 ## Assess Effects on End User Needs
 
 Lighting, model accuracy, and camera focal length/image size have different effects on a
 deployed edge model. The potential effects of each of these are as follows...
+
+- Lighting depends on the application and environment. Examples. 
+	Solutions, expand dataset, train on B&W. Preprocess image.
+
+- Model Accuracy is also dependant on the application. Optimize your truth matrix 
+	(False positives & False Negatives), get asessory from a statician.
+	Personally, images very close to the treshold I would send them to the server
+	for human classification.
+	Continuous retraining.
+	Sustaiin a random process for verification. 
+
+- Image Size, afects performance. This is better adderesed from the begining. 
+	Important to consider budget as well, as scope and scale of the project.
+	This is one of the first to focus as the model is dependant on this.
+	Affects speed as well. Little flexibility to pivot with end user from.
+
+  
+- Focal Length.
+	Unless working in conjunction with a photography knowledgable expert.
+	Worry about this until production, ideally this would be the parameter that allow
+	for different locations to get the same view. 
+	REgularize images based on plausible locations.
+  
 
 ## Model Research
 
